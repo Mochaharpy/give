@@ -114,7 +114,7 @@ const enchantments = [
     "swift_sneak", "wind_burst", "breach", "density"
 ];
 
-temInput = document.getElementById('item');
+const itemInput = document.getElementById('item');
 const itemList = document.getElementById('item-list');
 const enchantmentList = document.getElementById('enchantment-list');
 const enchantmentContainer = document.getElementById('enchantment-container');
@@ -150,7 +150,6 @@ function filterItems() {
     itemList.style.display = filteredItems.length ? 'block' : 'none';
 }
 
-// Populate enchantments list
 function populateEnchantmentList() {
     enchantments.forEach(enchantment => {
         const li = document.createElement('li');
@@ -191,7 +190,7 @@ document.addEventListener('click', (event) => {
 itemInput.addEventListener('input', filterItems);
 
 document.getElementById('generate').onclick = function() {
-    const item = document.getElementById('item').value;
+    const item = itemInput.value;
     const amount = document.getElementById('amount').value;
     let command = `/give @a ${item}`;
 
