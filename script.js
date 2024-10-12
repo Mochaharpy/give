@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!isVisible) {
             // Populate enchantments dropdown if not already populated
-            populateEnchantments(enchantmentsContainer);
+            const enchantmentSelects = document.querySelectorAll('.component-item');
+            enchantmentSelects.forEach(select => populateEnchantments(select));
         }
     };
 
@@ -62,8 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function attachRemoveHandler(componentDiv) {
         componentDiv.querySelector('.remove-component').onclick = function() {
-            const confirmDelete = confirm("Are you sure you want to delete this enchantment?");
-            if (confirmDelete) {
+            if (confirm("Are you sure you want to delete this enchantment?")) {
                 componentDiv.remove();
             }
         };
