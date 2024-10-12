@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <select class="component-item">
                 <option value="" disabled selected>Select Enchantment</option>
             </select>
-            <input type="number" placeholder="Level" class="component-amount" value="1">
+            <input type="number" placeholder="Level" class="component-amount" value="1" min="1">
             <button class="remove-component">Remove</button>
         `;
         
