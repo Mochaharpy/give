@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft /give Command Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MC Command Generator</title>
 </head>
 <body>
-    <h1>Minecraft /give Command Generator</h1>
-
-    <div class="card">
-        <h2>Item Selection</h2>
-        <label for="item">Item Name:</label>
-        <input type="text" id="item" placeholder="Type to search..." autocomplete="off">
-        <div id="item-list" class="dropdown-list"></div>
-
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" value="1" min="1">
+    <h1>MC Command Generator</h1>
+    
+    <div>
+        <label for="item">Select Item:</label>
+        <select id="item"></select>
+        <input type="number" id="amount" placeholder="Amount" min="1" value="1">
+        <button id="generate">Generate Command</button>
     </div>
 
-    <div class="card">
-        <h2>Enchantments</h2>
-        <button id="toggle-enchantments">Show Enchantments</button>
-        <div id="enchantment-container" style="display: none;">
-            <ul id="enchantment-list"></ul>
-            <button id="add-component">Add Selected Enchantment</button>
-        </div>
+    <button id="show-enchantments">Show Enchantments</button>
+    <div id="enchantments-container" style="display: none;">
         <div id="components-container"></div>
+        <button id="add-component">Add Enchantment</button>
     </div>
 
-    <button id="generate">Generate Command</button>
-    <h2>Command:</h2>
-    <pre id="output"></pre>
+    <div>
+        <h3>Generated Command:</h3>
+        <pre id="output"></pre>
+    </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
