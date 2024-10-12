@@ -1,6 +1,6 @@
 // Import items and enchantments
-import { items } from 'main/items.js';
-import { enchantments } from 'main/enchantments.js';
+import { items } from './items.js';
+import { enchantments } from './enchantments.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const itemSelect = document.getElementById('item');
