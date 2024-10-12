@@ -1,116 +1,131 @@
 const items = [
-    "minecraft:air", "minecraft:acacia_boat", "minecraft:acacia_button", 
-    "minecraft:acacia_door", "minecraft:acacia_fence", "minecraft:acacia_fence_gate", 
-    "minecraft:acacia_leaves", "minecraft:acacia_log", "minecraft:acacia_planks", 
-    "minecraft:acacia_sapling", "minecraft:acacia_sign", "minecraft:acacia_slab", 
-    "minecraft:acacia_stairs", "minecraft:acacia_trapdoor", "minecraft:activator_rail", 
-    "minecraft:allium", "minecraft:anvil", "minecraft:apple", 
-    "minecraft:armor_stand", "minecraft:arrow", "minecraft:baked_potato", 
-    "minecraft:barrel", "minecraft:barrier", "minecraft:beacon", 
-    "minecraft:bed", "minecraft:beetroot", "minecraft:beetroot_seeds", 
-    "minecraft:beetroot_soup", "minecraft:bell", "minecraft:bone", 
-    "minecraft:bone_meal", "minecraft:book", "minecraft:bookshelf", 
-    "minecraft:bow", "minecraft:bread", "minecraft:brewing_stand", 
-    "minecraft:brick", "minecraft:brick_slab", "minecraft:brick_stairs", 
-    "minecraft:brick_wall", "minecraft:brown_mushroom", "minecraft:bucket", 
-    "minecraft:cake", "minecraft:carrot", "minecraft:carrot_on_a_stick", 
-    "minecraft:cauldron", "minecraft:chainmail_boots", "minecraft:chainmail_chestplate", 
-    "minecraft:chainmail_helmet", "minecraft:chainmail_leggings", "minecraft:charcoal", 
-    "minecraft:chest", "minecraft:chest_minecart", "minecraft:chicken", 
-    "minecraft:chipped_anvil", "minecraft:chiseled_quartz_block", "minecraft:chiseled_stone_bricks", 
-    "minecraft:clay", "minecraft:clock", "minecraft:coal", 
-    "minecraft:coal_block", "minecraft:coal_ore", "minecraft:compass", 
-    "minecraft:comparator", "minecraft:composter", "minecraft:conduit", 
-    "minecraft:cooked_beef", "minecraft:cooked_chicken", "minecraft:cooked_cod", 
-    "minecraft:cooked_mutton", "minecraft:cooked_porkchop", "minecraft:cooked_rabbit", 
-    "minecraft:cooked_salmon", "minecraft:cookie", "minecraft:crossbow", 
-    "minecraft:diamond", "minecraft:diamond_axe", "minecraft:diamond_boots", 
-    "minecraft:diamond_chestplate", "minecraft:diamond_helmet", "minecraft:diamond_horse_armor", 
-    "minecraft:diamond_leggings", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", 
-    "minecraft:diamond_sword", "minecraft:diamond_block", "minecraft:diamond_ore", 
-    "minecraft:dirt", "minecraft:dispenser", "minecraft:double_plant", 
-    "minecraft:dragon_breath", "minecraft:dragon_egg", "minecraft:dry_kelp", 
-    "minecraft:dry_kelp_block", "minecraft:egg", "minecraft:emerald", 
-    "minecraft:emerald_block", "minecraft:emerald_ore", "minecraft:end_crystal", 
-    "minecraft:end_rod", "minecraft:end_stone", "minecraft:end_stone_brick", 
-    "minecraft:experience_bottle", "minecraft:feather", "minecraft:fermented_spider_eye", 
-    "minecraft:fire_charge", "minecraft:firework_rocket", "minecraft:firework_star", 
-    "minecraft:fish", "minecraft:flint", "minecraft:flint_and_steel", 
-    "minecraft:flower_pot", "minecraft:gold_ingot", "minecraft:gold_nugget", 
-    "minecraft:gold_block", "minecraft:gold_ore", "minecraft:golden_apple", 
-    "minecraft:golden_carrot", "minecraft:golden_horse_armor", "minecraft:granite", 
-    "minecraft:gray_stained_glass", "minecraft:green_stained_glass", "minecraft:gunpowder", 
-    "minecraft:hay_block", "minecraft:heart_of_the_sea", "minecraft:hopper", 
-    "minecraft:ice", "minecraft:iron_axe", "minecraft:iron_boots", 
-    "minecraft:iron_chestplate", "minecraft:iron_helmet", "minecraft:iron_horse_armor", 
-    "minecraft:iron_leggings", "minecraft:iron_nugget", "minecraft:iron_pickaxe", 
-    "minecraft:iron_shovel", "minecraft:iron_sword", "minecraft:iron_block", 
-    "minecraft:iron_ore", "minecraft:item_frame", "minecraft:kelp", 
-    "minecraft:ladder", "minecraft:lapis_lazuli", "minecraft:lapis_block", 
-    "minecraft:lapis_ore", "minecraft:lava_bucket", "minecraft:lead", 
-    "minecraft:leather", "minecraft:leather_boots", "minecraft:leather_chestplate", 
-    "minecraft:leather_helmet", "minecraft:leather_leggings", "minecraft:lever", 
-    "minecraft:light_blue_stained_glass", "minecraft:light_gray_stained_glass", "minecraft:lily_pad", 
-    "minecraft:lime_stained_glass", "minecraft:magenta_stained_glass", "minecraft:magma_block", 
-    "minecraft:map", "minecraft:melon", "minecraft:melon_seeds", 
-    "minecraft:melon_slice", "minecraft:music_disc", "minecraft:name_tag", 
-    "minecraft:nether_brick", "minecraft:nether_brick_fence", "minecraft:nether_brick_stairs", 
-    "minecraft:nether_star", "minecraft:nether_wart", "minecraft:obsidian", 
-    "minecraft:orange_stained_glass", "minecraft:papaya", "minecraft:peony", 
-    "minecraft:potato", "minecraft:potato_baked", "minecraft:power_rail", 
-    "minecraft:prismarine", "minecraft:prismarine_bricks", "minecraft:prismarine_stairs", 
-    "minecraft:pumpkin", "minecraft:pumpkin_pie", "minecraft:quartz", 
-    "minecraft:quartz_block", "minecraft:quartz_bricks", "minecraft:quartz_slab", 
-    "minecraft:quartz_stairs", "minecraft:redstone", "minecraft:redstone_block", 
-    "minecraft:redstone_lamp", "minecraft:redstone_ore", "minecraft:redstone_torch", 
-    "minecraft:rotten_flesh", "minecraft:saddle", "minecraft:salmon", 
-    "minecraft:sand", "minecraft:sandstone", "minecraft:sandstone_slab", 
-    "minecraft:sandstone_stairs", "minecraft:scute", "minecraft:shears", 
-    "minecraft:shulker_shell", "minecraft:sign", "minecraft:skeleton", 
-    "minecraft:slime_ball", "minecraft:smooth_quartz", "minecraft:smooth_red_sandstone", 
-    "minecraft:smooth_sandstone", "minecraft:smooth_stone", "minecraft:spawner", 
-    "minecraft:splash_potion", "minecraft:sponge", "minecraft:stone", 
-    "minecraft:stone_bricks", "minecraft:stone_brick_slab", "minecraft:stone_brick_stairs", 
-    "minecraft:stone_wall", "minecraft:stripped_acacia_log", "minecraft:stripped_birch_log", 
-    "minecraft:stripped_dark_oak_log", "minecraft:stripped_jungle_log", "minecraft:sweet_berries", 
-    "minecraft:tallgrass", "minecraft:target", "minecraft:terracotta", 
-    "minecraft:tnt", "minecraft:torch", "minecraft:totem_of_undying", 
-    "minecraft:trapped_chest", "minecraft:tripwire_hook", "minecraft:tropical_fish", 
-    "minecraft:water_bucket", "minecraft:wet_sponge", "minecraft:wheat", 
-    "minecraft:wheat_seeds", "minecraft:yellow_stained_glass", "minecraft:yellow_stained_glass_pane",
-    "minecraft:netherite_ingot", "minecraft:netherite_block", "minecraft:netherite_axe", 
-    "minecraft:netherite_boots", "minecraft:netherite_chestplate", "minecraft:netherite_helmet", 
-    "minecraft:netherite_leggings", "minecraft:netherite_pickaxe", "minecraft:netherite_shovel", 
-    "minecraft:netherite_sword", "minecraft:sculk_sensor", "minecraft:sculk_catalyst",
-    "minecraft:sculk_shrieker", "minecraft:swift_sneak", "minecraft:ancient_debris", 
-    "minecraft:chiseled_bookshelf", "minecraft:echo_shard", "minecraft:recovery_compass"
+    "air", "acacia_boat", "acacia_button", 
+    "acacia_door", "acacia_fence", "acacia_fence_gate", 
+    "acacia_leaves", "acacia_log", "acacia_planks", 
+    "acacia_sapling", "acacia_sign", "acacia_slab", 
+    "acacia_stairs", "acacia_trapdoor", "activator_rail", 
+    "allium", "anvil", "apple", 
+    "armor_stand", "arrow", "baked_potato", 
+    "barrel", "barrier", "beacon", 
+    "bed", "beetroot", "beetroot_seeds", 
+    "beetroot_soup", "bell", "bone", 
+    "bone_meal", "book", "bookshelf", 
+    "bow", "bread", "brewing_stand", 
+    "brick", "brick_slab", "brick_stairs", 
+    "brick_wall", "brown_mushroom", "bucket", 
+    "cake", "carrot", "carrot_on_a_stick", 
+    "cauldron", "chainmail_boots", "chainmail_chestplate", 
+    "chainmail_helmet", "chainmail_leggings", "charcoal", 
+    "chest", "chest_minecart", "chicken", 
+    "chipped_anvil", "chiseled_quartz_block", "chiseled_stone_bricks", 
+    "clay", "clock", "coal", 
+    "coal_block", "coal_ore", "compass", 
+    "comparator", "composter", "conduit", 
+    "cooked_beef", "cooked_chicken", "cooked_cod", 
+    "cooked_mutton", "cooked_porkchop", "cooked_rabbit", 
+    "cooked_salmon", "cookie", "crossbow", 
+    "diamond", "diamond_axe", "diamond_boots", 
+    "diamond_chestplate", "diamond_helmet", "diamond_horse_armor", 
+    "diamond_leggings", "diamond_pickaxe", "diamond_shovel", 
+    "diamond_sword", "diamond_block", "diamond_ore", 
+    "dirt", "dispenser", "double_plant", 
+    "dragon_breath", "dragon_egg", "dry_kelp", 
+    "dry_kelp_block", "egg", "emerald", 
+    "emerald_block", "emerald_ore", "end_crystal", 
+    "end_rod", "end_stone", "end_stone_brick", 
+    "experience_bottle", "feather", "fermented_spider_eye", 
+    "fire_charge", "firework_rocket", "firework_star", 
+    "fish", "flint", "flint_and_steel", 
+    "flower_pot", "gold_ingot", "gold_nugget", 
+    "gold_block", "gold_ore", "golden_apple", 
+    "golden_carrot", "golden_horse_armor", "granite", 
+    "gray_stained_glass", "green_stained_glass", "gunpowder", 
+    "hay_block", "heart_of_the_sea", "hopper", 
+    "ice", "iron_axe", "iron_boots", 
+    "iron_chestplate", "iron_helmet", "iron_horse_armor", 
+    "iron_leggings", "iron_nugget", "iron_pickaxe", 
+    "iron_shovel", "iron_sword", "iron_block", 
+    "iron_ore", "item_frame", "kelp", 
+    "ladder", "lapis_lazuli", "lapis_block", 
+    "lapis_ore", "lava_bucket", "lead", 
+    "leather", "leather_boots", "leather_chestplate", 
+    "leather_helmet", "leather_leggings", "lever", 
+    "light_blue_stained_glass", "light_gray_stained_glass", "lily_pad", 
+    "lime_stained_glass", "magenta_stained_glass", "magma_block", 
+    "map", "melon", "melon_seeds", 
+    "melon_slice", "music_disc", "name_tag", 
+    "nether_brick", "nether_brick_fence", "nether_brick_stairs", 
+    "nether_star", "nether_wart", "obsidian", 
+    "orange_stained_glass", "papaya", "peony", 
+    "potato", "potato_baked", "power_rail", 
+    "prismarine", "prismarine_bricks", "prismarine_stairs", 
+    "pumpkin", "pumpkin_pie", "quartz", 
+    "quartz_block", "quartz_bricks", "quartz_slab", 
+    "quartz_stairs", "redstone", "redstone_block", 
+    "redstone_lamp", "redstone_ore", "redstone_torch", 
+    "rotten_flesh", "saddle", "salmon", 
+    "sand", "sandstone", "sandstone_slab", 
+    "sandstone_stairs", "scute", "shears", 
+    "shulker_shell", "sign", "skeleton", 
+    "slime_ball", "smooth_quartz", "smooth_red_sandstone", 
+    "smooth_sandstone", "smooth_stone", "spawner", 
+    "splash_potion", "sponge", "stone", 
+    "stone_bricks", "stone_brick_slab", "stone_brick_stairs", 
+    "stone_wall", "stripped_acacia_log", "stripped_birch_log", 
+    "stripped_dark_oak_log", "stripped_jungle_log", "sweet_berries", 
+    "tallgrass", "target", "terracotta", 
+    "tnt", "torch", "totem_of_undying", 
+    "trapped_chest", "tripwire_hook", "tropical_fish", 
+    "water_bucket", "wet_sponge", "wheat", 
+    "wheat_seeds", "yellow_stained_glass", "yellow_stained_glass_pane",
+    "netherite_ingot", "netherite_block", "netherite_axe", 
+    "netherite_boots", "netherite_chestplate", "netherite_helmet", 
+    "netherite_leggings", "netherite_pickaxe", "netherite_shovel", 
+    "netherite_sword", "sculk_sensor", "sculk_catalyst",
+    "sculk_shrieker", "swift_sneak", "ancient_debris", 
+    "chiseled_bookshelf", "echo_shard", "recovery_compass",
+    "tinted_glass", "candle", "candle_cake",
+    "sculk_vein", "sculk_sensors", "cobbled_deepslate",
+    "cobbled_deepslate_slab", "cobbled_deepslate_stairs", "cobbled_deepslate_wall",
+    "deepslate", "deepslate_brick_slab", "deepslate_brick_stairs",
+    "deepslate_brick_wall", "deepslate_tile_slab", "deepslate_tile_stairs",
+    "deepslate_tile_wall", "infested_stone", "infested_cobblestone",
+    "infested_deepslate", "infested_stone_bricks", "infested_cracked_stone_bricks",
+    "suspicious_stew", "bundle", "pointed_dripstone", 
+    "dripstone_block", "mud", "mud_brick", 
+    "mud_brick_slab", "mud_brick_stairs", "mud_brick_wall",
+    "moss_block", "moss_carpet", "mossy_cobblestone", 
+    "mossy_cobblestone_slab", "mossy_cobblestone_stairs", "mossy_cobblestone_wall", 
+    "soul_campfire", "soul_fire", "soul_lantern", 
+    "soul_soil", "soul_torch", "wheat_seeds"
 ];
 
 const enchantments = [
-    "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", 
-    "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", 
-    "minecraft:efficiency", "minecraft:silk_touch", "minecraft:unbreaking", 
-    "minecraft:fortune", "minecraft:power", "minecraft:punch", 
-    "minecraft:flame", "minecraft:infinity", "minecraft:depth_strider", 
-    "minecraft:feather_falling", "minecraft:protection", "minecraft:fire_protection", 
-    "minecraft:blast_protection", "minecraft:projectile_protection", 
-    "minecraft:aqua_affinity", "minecraft:respiration", "minecraft:thorns", 
-    "minecraft:binding_curse", "minecraft:vanishing_curse", 
-    "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:channeling", 
-    "minecraft:impaling", "minecraft:loyalty", "minecraft:riptide", 
-    "minecraft:multishot", "minecraft:piercing", "minecraft:quick_charge"
+    "protection", "fire_protection", "feather_falling", 
+    "blast_protection", "projectile_protection", "thorns", 
+    "sharpness", "smite", "bane_of_arthropods", 
+    "knockback", "fire_aspect", "looting", 
+    "efficiency", "silk_touch", "unbreaking", 
+    "fortune", "power", "punch", 
+    "flame", "infinity", "luck_of_the_sea", 
+    "lure", "frost_walker", "depth_strider", 
+    "respiration", "aqua_affinity", "mending", 
+    "vanishing_curse", "binding_curse", "soul_speed",
+    "swift_sneak", "wind_burst", "breach", "density"
 ];
 
-const itemInput = document.getElementById('item');
+temInput = document.getElementById('item');
 const itemList = document.getElementById('item-list');
 const enchantmentList = document.getElementById('enchantment-list');
+const enchantmentContainer = document.getElementById('enchantment-container');
+const toggleEnchantmentsButton = document.getElementById('toggle-enchantments');
 
 function populateItemList() {
     items.forEach(item => {
         const div = document.createElement('div');
-        div.textContent = item;
+        div.textContent = `minecraft:${item}`;
         div.onclick = () => {
-            itemInput.value = item;
+            itemInput.value = `minecraft:${item}`;
             itemList.innerHTML = ''; // Clear dropdown on selection
             itemList.style.display = 'none'; // Hide dropdown
         };
@@ -119,14 +134,14 @@ function populateItemList() {
 }
 
 function filterItems() {
-    const filter = itemInput.value.toLowerCase();
+    const filter = itemInput.value.toLowerCase().replace("minecraft:", "");
     const filteredItems = items.filter(item => item.toLowerCase().includes(filter));
     itemList.innerHTML = '';
     filteredItems.forEach(item => {
         const div = document.createElement('div');
-        div.textContent = item;
+        div.textContent = `minecraft:${item}`;
         div.onclick = () => {
-            itemInput.value = item;
+            itemInput.value = `minecraft:${item}`;
             itemList.innerHTML = ''; // Clear dropdown on selection
             itemList.style.display = 'none'; // Hide dropdown
         };
@@ -139,9 +154,9 @@ function filterItems() {
 function populateEnchantmentList() {
     enchantments.forEach(enchantment => {
         const li = document.createElement('li');
-        li.textContent = enchantment;
+        li.textContent = `minecraft:${enchantment}`;
         li.onclick = () => {
-            addEnchantment(enchantment);
+            addEnchantment(`minecraft:${enchantment}`);
         };
         enchantmentList.appendChild(li);
     });
@@ -160,6 +175,12 @@ function addEnchantment(enchantment) {
     attachRemoveHandler(newComponent);
 }
 
+function attachRemoveHandler(componentDiv) {
+    componentDiv.querySelector('.remove-component').onclick = function() {
+        componentDiv.remove();
+    };
+}
+
 // Hide dropdown when clicking outside
 document.addEventListener('click', (event) => {
     if (!itemInput.contains(event.target)) {
@@ -168,25 +189,6 @@ document.addEventListener('click', (event) => {
 });
 
 itemInput.addEventListener('input', filterItems);
-
-document.getElementById('add-component').onclick = function() {
-    const container = document.getElementById('components-container');
-    const newComponent = document.createElement('div');
-    newComponent.className = 'component';
-    newComponent.innerHTML = `
-        <input type="text" placeholder="Enchantment" class="component-item" value="minecraft:">
-        <input type="number" placeholder="Level" class="component-amount" value="1">
-        <button class="remove-component">Remove</button>
-    `;
-    container.appendChild(newComponent);
-    attachRemoveHandler(newComponent);
-};
-
-function attachRemoveHandler(componentDiv) {
-    componentDiv.querySelector('.remove-component').onclick = function() {
-        componentDiv.remove();
-    };
-}
 
 document.getElementById('generate').onclick = function() {
     const item = document.getElementById('item').value;
@@ -201,12 +203,19 @@ document.getElementById('generate').onclick = function() {
             return `"${enchantment}":${level}`;
         }).filter(Boolean);
         
-        command += `[enchantments={levels:{${enchantments.join(',')}}}] ${amount}`;
-    } else {
-        command += ` ${amount}`;
+        if (enchantments.length > 0) {
+            command += `[enchantments={levels:{${enchantments.join(',')}}}]`;
+        }
     }
 
+    command += ` ${amount}`;
     document.getElementById('output').innerText = command;
+};
+
+toggleEnchantmentsButton.onclick = function() {
+    const isExpanded = enchantmentContainer.style.display === 'block';
+    enchantmentContainer.style.display = isExpanded ? 'none' : 'block';
+    toggleEnchantmentsButton.textContent = isExpanded ? 'Show Enchantments' : 'Hide Enchantments';
 };
 
 // Initialize the dropdown and enchantment list
